@@ -1,0 +1,5 @@
+1.统一设置文件为settings,java负责settings的写操作，matlab进行读操作
+[a1 a2]=textread('settings','%f%s')
+
+2.java用shell命令执行matlab文件命令
+String command="/home/ljw/desktop/matlab2012a/bin/matlab -nodesktop -nosplash  -r \"eachFile('"+Util.path+"','"+Util.name+"');quit;\";";
